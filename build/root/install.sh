@@ -64,7 +64,7 @@ if [ ! -f /config/rubymine/config/options/recentProjectDirectories.xml ]; then
 fi
 
 # run rubymine
-/usr/bin/rubymine
+/usr/bin/jetbrains-rubymine
 EOF
 
 # replace startcmd placeholder string with contents of file (here doc)
