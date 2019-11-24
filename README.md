@@ -1,14 +1,14 @@
 **Application**
 
-[PyCharm](https://www.jetbrains.com/pycharm/)
+[RubyMine](https://www.jetbrains.com/rubymine/)
 
 **Description**
 
-PyCharm is an Integrated Development Environment (IDE) used in computer programming, specifically for the Python language. It is developed by the Czech company JetBrains.[2] It provides code analysis, a graphical debugger, an integrated unit tester, integration with version control systems (VCSes), and supports web development with Django.
+RubyMine is an Integrated Development Environment (IDE) used in computer programming, specifically for the Ruby language. It is developed by the Czech company JetBrains.[2] It provides code analysis, a graphical debugger, an integrated unit tester, integration with version control systems (VCSes), and supports web development with Rails and others frameworks.
 
 **Build notes**
 
-Latest stable PyCharm release from Arch Linux AUR.
+Latest stable RubyMine release from Arch Linux AUR.
 
 **Usage**
 ```
@@ -24,7 +24,7 @@ docker run -d \
     -e UMASK=<umask for created files> \
     -e PUID=<uid for user> \
     -e PGID=<gid for user> \
-    binhex/arch-pycharm
+    alexshenia/arch-rubymine
 ```
 
 Please replace all user variables in the above command defined by <> with the correct values.
@@ -34,16 +34,16 @@ Please replace all user variables in the above command defined by <> with the co
 docker run -d \
     -p 5900:5900 \
     -p 6080:6080 \
-    --name=pycharm \
-    -v /apps/docker/pycharm:/config \
-    -v /apps/docker/pycharm/projects:/data \
+    --name=rubymine \
+    -v /apps/docker/rubymine:/config \
+    -v /apps/docker/rubymine/projects:/data \
     -v /etc/localtime:/etc/localtime:ro \
     -e WEBPAGE_TITLE=Tower \
     -e VNC_PASSWORD=mypassword \
     -e UMASK=000 \
     -e PUID=0 \
     -e PGID=0 \
-    binhex/arch-pycharm
+    alexshenia/arch-rubymine
 ```
 
 **Access via web interface (noVNC)**
