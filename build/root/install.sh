@@ -38,7 +38,6 @@ aur_packages="websockify rubymine rvm"
 # call aur install script (arch user repo)
 source aur.sh
 
-rvm install 2.6.5
 # config rubymine
 ####
 
